@@ -12,6 +12,7 @@ Questions:
 1. Missing Numbers in N Natural Number List. (C++)
 
 ## C programming
+Dynamic Memory Allocation: https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/ <br />
 C Posix Library usage: https://en.wikipedia.org/wiki/C_POSIX_library <br />
 
 ## C++ programming (OOPS covered)
