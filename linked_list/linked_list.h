@@ -15,6 +15,8 @@ typedef struct llnode
 llnode* create_ll_node(int val);
 // create n natural number list.
 llnode* create_n_num_list(int n);
+// size of linked list.
+int size_of_ll(llnode* head);
 // print the contents of the node.
 void print_list(llnode* head);
 // delete the list. [This is C, so no RAII containment]

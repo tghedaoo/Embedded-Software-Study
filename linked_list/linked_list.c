@@ -33,6 +33,19 @@ llnode* create_n_num_list(int n)
     return head;
 }
 
+int size_of_ll(llnode* head)
+{
+    int size = 0;  
+    llnode* cursor = head;
+    while(cursor != NULL)
+    {
+        ++size;
+        cursor = cursor->next;
+    }
+    return size;
+}
+
+
 void print_list(llnode* head)
 {
     llnode* cursor = head;
