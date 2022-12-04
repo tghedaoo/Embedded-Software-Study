@@ -35,6 +35,7 @@ llnode* reverse_ll(llnode* head)
     node_list[0]->next = NULL;
     head = node_list[list_size-1];
 
+    free(node_list);
     return head;
 }
 
