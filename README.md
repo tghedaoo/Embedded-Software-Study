@@ -6,7 +6,7 @@ The linked list folder has a practice level implementation of a singly linked li
 1. Reverse Linked List (C) https://leetcode.com/explore/interview/card/apple/345/linked-list/2024/
 ### *String manipulation*
 1. First Unique Character in a String (C) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2018/ <br />
-2. String to Integer (atoi) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2010/ <br />
+2. String to Integer (atoi) (C) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2010/ <br />
 **Important points:** <br />
 * On the fly - overflow and underflow check to avoid runtime output variable overflow or underflow.
 ```
@@ -34,8 +34,12 @@ https://www.geeksforgeeks.org/little-and-big-endian-mystery/
 1. Missing Number (C++) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/3114/
 
 ## C programming
-Dynamic Memory Allocation: <br />
+* Dynamic Memory Allocation: <br />
 https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/ 
+* Variable Arguments for a function: <br />
+https://www.geeksforgeeks.org/variable-length-argument-c/ <br />
+Good Example: https://en.cppreference.com/w/c/variadic
+
 ### C POSIX Library (IEEE 1003)
 https://en.wikipedia.org/wiki/C_POSIX_library <br />
 Frequently used.
@@ -45,6 +49,7 @@ Frequently used.
 * <pthread.h>
 * <semaphore.h>
 * <signal.h>
+* <stdargs.h>
 * <stdbool.h>
 * <stddef.h>
 * <stdint.h>
@@ -77,13 +82,18 @@ Refer "Socket Programming" for more.
 
 ## Socket Programming
 Inter host communication on a network in a client/server fashion. <br />
-Inter Process Communication in the case of same host. AF_LOCAL. <br />
+Inter Process Communication in the case of same host. AF_INET & "127.0.0.1". <br />
 ```
 #include <sys/socket.h>
+#include <netinet/in.h> // for struct sockaddr_in
+#include <arpa/inet.h>  // for inet_pton
 ```
+See notes in code [socket_programming folder]
 Links:<br />
 https://www.geeksforgeeks.org/socket-programming-cc/ <br />
 https://www.geeksforgeeks.org/socket-programming-in-cc-handling-multiple-clients-on-server-without-multi-threading/ <br />
+*TCP vs UDP*
+https://www.lifesize.com/blog/tcp-vs-udp/#:~:text=TCP%20is%20a%20connection%2Doriented,is%20only%20possible%20with%20TCP.
 
 ## Common Links.
 Code review practices: https://www.youtube.com/watch?v=3pth05Rgr8U <br />
