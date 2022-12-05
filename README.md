@@ -3,21 +3,35 @@
 ## DSA Practice
 ### *Linked List*
 The linked list folder has a practice level implementation of a singly linked list. Implemented in C and C++. <br />
-Questions:
-1. Reverse Linked List (C)
-### String manipulation
-1. First Unique Character in a String https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2018/
-
+1. Reverse Linked List (C) https://leetcode.com/explore/interview/card/apple/345/linked-list/2024/
+### *String manipulation*
+1. First Unique Character in a String (C) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2018/ <br />
+2. String to Integer (atoi) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2010/ <br />
+**Important points:** <br />
+* On the fly - overflow and underflow check to avoid runtime output variable overflow or underflow.
+```
+Sign is added later. Therefore overflow checked. Underflow is represented after checking sign.
+if(result > INT_MAX / 10) || (result == INT_MAX / 10 && digit > INT_MAX % 10))
+```
+* Appending Digits from Lsb.
+```
+result = 10 * result + digit;
+```
+* ASCII conversions (char to int)
+```
+isdigit();      // to check digit in C++ or do it manually
+char - '0';     // get the integer digit on the char representation. (ASCII of digit - ASCII of 0) 
+```
+ <br />
 
 ## General Programming for Embedded Systems
 ### *Endianess*
-Code in the repo. <br />
+Most machines are little endian. <br />
 Standard byte order for networks is big endian, also known as network byte order. Before transferring data on network, data is first converted to network byte order (big endian). <br />
 Sometimes it matters when you are using type casting. (To be avoided.)
 https://www.geeksforgeeks.org/little-and-big-endian-mystery/
 ### *Bit manipulation*
-Questions:
-1. Missing Numbers in N Natural Number List. (C++)
+1. Missing Number (C++) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/3114/
 
 ## C programming
 Dynamic Memory Allocation: <br />
@@ -64,8 +78,9 @@ Refer "Socket Programming" for more.
 ## Socket Programming
 Inter host communication on a network in a client/server fashion. <br />
 Inter Process Communication in the case of same host. AF_LOCAL. <br />
+```
 #include <sys/socket.h>
-
+```
 Links:<br />
 https://www.geeksforgeeks.org/socket-programming-cc/ <br />
 https://www.geeksforgeeks.org/socket-programming-in-cc-handling-multiple-clients-on-server-without-multi-threading/ <br />
