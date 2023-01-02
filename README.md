@@ -44,7 +44,6 @@ Standard byte order for networks is big endian, also known as network byte order
 Sometimes it matters when you are using type casting. (To be avoided.)
 https://www.geeksforgeeks.org/little-and-big-endian-mystery/
 ### *Bit manipulation*
-1. Missing Number (C++) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/3114/
 
 ## Operating Systems
 ### *Thread and Process*
@@ -91,11 +90,11 @@ https://www.lifesize.com/blog/tcp-vs-udp/#:~:text=TCP%20is%20a%20connection%2Dor
 3. Implementation defined (memory allocation in case of zero space request)
 #### MISRA C rules to avoid issues with it
 
-# CODING QUESTIONS
-
 ## Common Links.
 Code review practices: https://www.youtube.com/watch?v=3pth05Rgr8U <br />
 LLDB debugging for Mac M1: https://www.youtube.com/watch?v=v_C1cvo1biI (Allow access to see code breakpoints.)
+
+# CODING QUESTIONS
 
 ## DSA Practice
 ### *Linked List*
