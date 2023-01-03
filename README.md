@@ -2,6 +2,9 @@
 
 # CONCEPTS
 
+## C++ programming (OOPS covered)
+TBD
+
 ## C programming
 * String Functions <br />
 https://www.programiz.com/c-programming/string-handling-functions
@@ -33,9 +36,6 @@ Frequently used.
 * <sys/wait.h>
 * <time.h>
 * <unistd.h>
-
-## C++ programming (OOPS covered)
-TBD
 
 ## General Programming for Embedded Systems
 ### *Endianess*
@@ -121,3 +121,4 @@ char - '0';     // get the integer digit on the char representation. (ASCII of d
 
 ### *Bit manipulation*
 1. Missing Number (C++) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/3114/
+
