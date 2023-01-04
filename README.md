@@ -3,7 +3,14 @@
 # CONCEPTS
 
 ## C++ programming (OOPS covered)
-TBD
+* RAII
+* Smart pointer
+* Inheritance
+* Dynamic Polymorphism
+* Static Polymorphism
+* Diamond problem
+* V-Table
+* const & constexpr
 
 ## C programming
 * String Functions <br />
