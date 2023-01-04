@@ -25,47 +25,6 @@ public:
         prev_ = nullptr;
     }
 
-    // Get data for the node.
-
-    int get_key()
-    {
-        return key_;
-    }
-
-    int get_val()
-    {
-        return value_;
-    }
-
-    DLLNode *get_next()
-    {
-        return next_;
-    }
-
-    DLLNode *get_prev()
-    {
-        return prev_;
-    }
-
-    // Update Value.
-    void update_val(int val)
-    {
-        value_ = val;
-    }
-
-    // Update connections.
-
-    void update_next(DLLNode *node)
-    {
-        next_ = node;
-    }
-
-    void update_prev(DLLNode *node)
-    {
-        prev_ = node;
-    }
-
-private:
     int key_;
     int value_;
     DLLNode *next_;
@@ -93,8 +52,8 @@ public:
     {
         if (head_ != nullptr)
         {
-            head_->update_prev(node);
-            node->update_next(head_);            
+            head_->prev_ = node;
+            node->next_ = head_;            
             head_ = node;
         }
         else
@@ -107,23 +66,23 @@ public:
     // Remove node from between or end of the list.
     void remove_node(DLLNode* node)
     {
-        DLLNode* prev_node = node->get_prev();
-        DLLNode* next_node = node->get_next(); 
+        DLLNode* prev_node = node->prev_;
+        DLLNode* next_node = node->next_; 
 
-        prev_node->update_next(next_node);
+        prev_node->next_ = next_node;
         
         // check if node at tail.
         if(node != tail_)
         {
-            next_node->update_prev(prev_node);
+            next_node->prev_ = prev_node;
         }
         else
         {
             tail_ = prev_node;
         }
             
-        node->update_prev(nullptr);
-        node->update_next(nullptr);
+        node->prev_ = nullptr;
+        node->next_ = nullptr;
     }
 
     // Update head with most recently used key.
@@ -141,11 +100,11 @@ public:
     void remove_tail()
     {
         // From HashMap
-        storage_.erase(tail_->get_key());
+        storage_.erase(tail_->key_);
         // From DLL
         DLLNode *tail_to_remove = tail_;
-        tail_ = tail_->get_prev();
-        tail_->update_next(nullptr);
+        tail_ = tail_->prev_;
+        tail_->next_ = nullptr;
         delete (tail_to_remove);
     }
 
@@ -155,12 +114,12 @@ public:
         std::cout << "Current_size = " << current_size_ << std::endl;
         while (cursor != nullptr)
         {
-            std::cout << cursor->get_key() << ":" << cursor->get_val();
-            if (cursor->get_next() != nullptr)
+            std::cout << cursor->key_ << ":" << cursor->value_;
+            if (cursor->next_ != nullptr)
             {
                 std::cout << "<->";
             }
-            cursor = cursor->get_next();
+            cursor = cursor->next_;
         }
         std::cout << std::endl;
     }
@@ -172,7 +131,7 @@ public:
         if (storage_.find(key) != storage_.end())
         {
             update_head(storage_[key]);
-            return storage_[key]->get_val();
+            return storage_[key]->value_;
         }
 
         return -1;
@@ -204,7 +163,7 @@ public:
         else
         {
             // update value for the key and move to head.
-            storage_[key]->update_val(value);
+            storage_[key]->value_ = value;
             update_head(storage_[key]);
             // no size update.
         }

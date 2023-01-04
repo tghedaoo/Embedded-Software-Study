@@ -119,6 +119,13 @@ char - '0';     // get the integer digit on the char representation. (ASCII of d
 ```
  <br />
 
-### *Bit manipulation*
+### *Advanced Questions*
+1. LRU Cache (C++) https://leetcode.com/problems/lru-cache/description/ <br />
+LRU Cache needs a hash map mapping the nodes of a Doubly Linked List. The DLL tracks the least recently used key. <br />
+When a new key or a recently used key comes in, the DLL updates in such a way that the key in question ends up at the head. <br />
+Naturally the tail node becomes the least recently used one. This is removed whenever the list reaches capacity. <br />
+Note: To avoid time exceed issue, remove extra functions from the class and hard code the ops. <br />
+
+## *Bit manipulation*
 1. Missing Number (C++) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/3114/
 
