@@ -2,12 +2,20 @@
 
 # CONCEPTS
 
-## C++ programming (OOPS covered)
+## C++ programming 
+* STL - string
+* STL - vector
+* STL - unordered_map & map
+* Copy and Move semantics
 * RAII
 * Smart pointer
 * Inheritance
+* Friend class
 * Dynamic Polymorphism
+* Virtual Functions
 * Static Polymorphism
+* Operator Overloading
+* Function Overloading
 * Diamond problem
 * V-Table
 * const & constexpr
@@ -105,7 +113,12 @@ LLDB debugging for Mac M1: https://www.youtube.com/watch?v=v_C1cvo1biI (Allow ac
 
 ## DSA Practice
 ### *Linked List*
-1. Reverse Linked List (C) https://leetcode.com/explore/interview/card/apple/345/linked-list/2024/
+1. Reverse Linked List (C) https://leetcode.com/explore/interview/card/apple/345/linked-list/2024/ <br />
+2 approaches: <br />
+* Save all node pointers in a vector and start connecting again from the last node. <br />
+* Use three pointers. Track previous, current and next node and reverse the connection. <br />
+2. Merge 2 Sorted Lists (C++) https://leetcode.com/problems/merge-two-sorted-lists/submissions/871600832/ <br />
+Create a dummy node to start from and compare nodes from 2 lists and select the minimum one. <br /> 
 ### *String manipulation*
 1. First Unique Character in a String (C) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2018/ <br />
 2. String to Integer (atoi) (C) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2010/ <br />
@@ -135,4 +148,4 @@ Note: To avoid time exceed issue, remove extra functions from the class and hard
 
 ## *Bit manipulation*
 1. Missing Number (C++) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/3114/
-
+XOR all the way. XOR all indexes with the given array.
