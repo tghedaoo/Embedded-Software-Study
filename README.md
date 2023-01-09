@@ -59,7 +59,8 @@ Most machines are little endian. <br />
 Standard byte order for networks is big endian, also known as network byte order. Before transferring data on network, data is first converted to network byte order (big endian). <br />
 Sometimes it matters when you are using type casting. (To be avoided.)
 https://www.geeksforgeeks.org/little-and-big-endian-mystery/
-### *Bit manipulation*
+### *Socket Programming*
+### *Bit Manipulation*
 
 ## Operating Systems
 ### *Thread and Process*
@@ -83,21 +84,6 @@ Refer "Socket Programming" for more. C
 ### *Virtual Memory, Paging, TLB Cache*
 ### Shell Concepts
 #### Redirection
-
-## Socket Programming
-Inter host communication on a network in a client/server fashion. <br />
-Inter Process Communication in the case of same host. AF_INET (Address Family) & "127.0.0.1". <br />
-```
-#include <sys/socket.h>
-#include <netinet/in.h> // for struct sockaddr_in
-#include <arpa/inet.h>  // for inet_pton
-```
-See notes in code [socket_programming folder]
-Links:<br />
-https://www.geeksforgeeks.org/socket-programming-cc/ <br />
-https://www.geeksforgeeks.org/socket-programming-in-cc-handling-multiple-clients-on-server-without-multi-threading/ <br />
-*TCP vs UDP*
-https://www.lifesize.com/blog/tcp-vs-udp/#:~:text=TCP%20is%20a%20connection%2Doriented,is%20only%20possible%20with%20TCP.
 
 ## ISO 26262.
 ### *Issues with C*
@@ -124,12 +110,12 @@ In gui, it's easy to visually see the current variables and states. Useful for i
 'n' to go next line. <br />
 's' to step in. <br />
 
-
 # CODING QUESTIONS
 
 ## DSA Practice
 1. Linked List
 2. String mainpulation
+3. Bit manipulation
 
 ### *Advanced Questions*
 1. LRU Cache (C++) https://leetcode.com/problems/lru-cache/description/ <br />
@@ -137,7 +123,3 @@ LRU Cache needs a hash map mapping the nodes of a Doubly Linked List. The DLL tr
 When a new key or a recently used key comes in, the DLL updates in such a way that the key in question ends up at the head. <br />
 Naturally the tail node becomes the least recently used one. This is removed whenever the list reaches capacity. <br />
 Note: To avoid time exceed issue, remove extra functions from the class and hard code the ops. <br />
-
-## *Bit manipulation*
-1. Missing Number (C++) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/3114/
-XOR all the way. XOR all indexes with the given array.
