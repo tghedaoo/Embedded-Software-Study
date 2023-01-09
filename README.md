@@ -68,7 +68,8 @@ Frequently used.
 3. [Bit manipulation](bit_manipulation/README.md)
 
 ## Advanced Questions
-1. LRU Cache (C++) https://leetcode.com/problems/lru-cache/description/ <br />
+1. **LRU Cache** (C++) <br />
+https://leetcode.com/problems/lru-cache/description/ <br />
 LRU Cache needs a hash map mapping the nodes of a Doubly Linked List. The DLL tracks the least recently used key. <br />
 When a new key or a recently used key comes in, the DLL updates in such a way that the key in question ends up at the head. <br />
 Naturally the tail node becomes the least recently used one. This is removed whenever the list reaches capacity. <br />

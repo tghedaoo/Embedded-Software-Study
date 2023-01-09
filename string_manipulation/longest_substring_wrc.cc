@@ -8,6 +8,42 @@
 
 class Solution {
 public:
+    // Correct_solution : Sliding Window technique
+    // The sliding window is a hash set. Searching in this window is O(1).
+    int lengthOfLongestSubstring(std::string s)
+    {
+        return 0;
+    }
+
+    // Correct_solution : Brute Force. Enumerate all substrings.
+    // Pick each char and start making a non repeating char substring out of it. Find the biggest substring.
+    // DOUBT: O(n²) or O(n³) time complexity.
+    // O(min(m,n)) space.
+    int lengthOfLongestSubstring_brute(std::string s)
+    {
+        int res = 0;
+        for (int i = 0; i < (int)(s.length()-1); i++) // Important: typecast issue as s.length is unsigned int.
+        {
+            int j;
+            std::unordered_set<char> substring;
+            substring.insert(s.at(i));
+            for (j = i+1; j < s.length(); j++)
+            {
+                // Saves search time as this is O(1). 
+                if(substring.find(s.at(j)) == substring.end()) 
+                {
+                    substring.insert(s.at(j));
+                }
+                else
+                {
+                    break;
+                }
+            }
+            res = (substring.size() > res) ? substring.size() : res;
+        }
+        return (s.length() <= 1) ? s.length() : res;
+    }
+
     // Incorrect solution as it doesn't check for previously touched chars.
     // Using hash_set though is the fastest as searching the substring is O(1)
     int lengthOfLongestSubstring_incorrect(std::string s) 
@@ -38,24 +74,18 @@ public:
         return (current_res > res) ? current_res : res;
     }
 
-    // Correct_solution : Sliding Window technique
-    // The sliding window is a hash set. Searching in this window is O(1).
-    int lengthOfLongestSubstring(std::string s)
-    {
-
-    }
 };
 
 int main()
 {
     Solution solution_obj;
 
-    std::cout << solution_obj.lengthOfLongestSubstring("abcabcbb") << std::endl;
-    std::cout << solution_obj.lengthOfLongestSubstring("bbbbb") << std::endl;
-    std::cout << solution_obj.lengthOfLongestSubstring("pwwkew") << std::endl;
-
-    int res = solution_obj.lengthOfLongestSubstring("au");
-    std::cout << res << std::endl;
+    std::cout << solution_obj.lengthOfLongestSubstring_brute("abcabcbb") << std::endl;
+    std::cout << solution_obj.lengthOfLongestSubstring_brute("bbbbb") << std::endl;
+    std::cout << solution_obj.lengthOfLongestSubstring_brute("pwwkew") << std::endl;
+    std::cout << solution_obj.lengthOfLongestSubstring_brute("au") << std::endl;
+    std::cout << solution_obj.lengthOfLongestSubstring_brute(" ") << std::endl;
+    std::cout << solution_obj.lengthOfLongestSubstring_brute("") << std::endl;
 
     return 0;
 }
