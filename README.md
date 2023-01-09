@@ -53,49 +53,31 @@ Frequently used.
 * <time.h>
 * <unistd.h>
 
-## General Programming for Embedded Systems
-### *Endianess*
-Most machines are little endian. <br />
-Standard byte order for networks is big endian, also known as network byte order. Before transferring data on network, data is first converted to network byte order (big endian). <br />
-Sometimes it matters when you are using type casting. (To be avoided.)
-https://www.geeksforgeeks.org/little-and-big-endian-mystery/
-### *Socket Programming*
-### *Bit Manipulation*
+## Embedded Systems
+1. [Endianess](endianess_check/README.md)
+2. [Socket Programming](socket_programming/README.md)
+3. [Bit Manipulation](bit_manipulation/README.md)
+4. [Operating Systems](operating_systems/README.md)
+5. [Peripherals]()
 
-## Operating Systems
-### *Thread and Process*
-#### System Calls
-https://www.geeksforgeeks.org/introduction-of-system-call/
-#### Process Creation System Calls. [ fork() and exec() ]
-https://www.geeksforgeeks.org/difference-fork-exec/
-### *Thread Synchronization*
-#### Mutex vs Semaphore
-https://www.geeksforgeeks.org/mutex-lock-for-linux-thread-synchronization/
-https://www.tutorialspoint.com/mutex-vs-semaphore
-#### Others
-https://www.geeksforgeeks.org/priority-inversion-what-the-heck/
-### *Process Synchronization (Inter-Process Communication IPC)*
-#### Pipe
-https://www.geeksforgeeks.org/pipe-system-call/
-#### Shared Memory
-#### Socket (Local)
-Refer "Socket Programming" for more. C
-#### Signaling
-### *Virtual Memory, Paging, TLB Cache*
-### Shell Concepts
-#### Redirection
+# CODING QUESTIONS
 
-## ISO 26262.
-### *Issues with C*
-1. Unspecified behaviour (sequence of evaluation)
-2. Undefined behaviour (overflow/ underflow issues)
-3. Implementation defined (memory allocation in case of zero space request)
-#### MISRA C rules to avoid issues with it
+## DSA Practice
+1. [Linked List](linked_list/README.md)
+2. [String mainpulation](string_manipulation/README.md)
+3. [Bit manipulation](bit_manipulation/README.md)
 
-## Code Review Practices.
+## Advanced Questions
+1. LRU Cache (C++) https://leetcode.com/problems/lru-cache/description/ <br />
+LRU Cache needs a hash map mapping the nodes of a Doubly Linked List. The DLL tracks the least recently used key. <br />
+When a new key or a recently used key comes in, the DLL updates in such a way that the key in question ends up at the head. <br />
+Naturally the tail node becomes the least recently used one. This is removed whenever the list reaches capacity. <br />
+Note: To avoid time exceed issue, remove extra functions from the class and hard code the ops. <br />
+
+# Code Review Practices.
 Code review practices: https://www.youtube.com/watch?v=3pth05Rgr8U <br />
 
-## LLDB Debugger.
+# LLDB Debugger.
 LLDB debugging for Mac M1: https://www.youtube.com/watch?v=v_C1cvo1biI (Allow access to see code breakpoints.) <br />
 General command flow: 
 Add a breakpoint at main or any line number of your choice.
@@ -110,16 +92,9 @@ In gui, it's easy to visually see the current variables and states. Useful for i
 'n' to go next line. <br />
 's' to step in. <br />
 
-# CODING QUESTIONS
-
-## DSA Practice
-1. Linked List
-2. String mainpulation
-3. Bit manipulation
-
-### *Advanced Questions*
-1. LRU Cache (C++) https://leetcode.com/problems/lru-cache/description/ <br />
-LRU Cache needs a hash map mapping the nodes of a Doubly Linked List. The DLL tracks the least recently used key. <br />
-When a new key or a recently used key comes in, the DLL updates in such a way that the key in question ends up at the head. <br />
-Naturally the tail node becomes the least recently used one. This is removed whenever the list reaches capacity. <br />
-Note: To avoid time exceed issue, remove extra functions from the class and hard code the ops. <br />
+# ISO 26262.
+### *Issues with C*
+1. Unspecified behaviour (sequence of evaluation)
+2. Undefined behaviour (overflow/ underflow issues)
+3. Implementation defined (memory allocation in case of zero space request)
+#### MISRA C rules to avoid issues with it
