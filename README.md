@@ -3,6 +3,7 @@
 # CONCEPTS
 
 ## C++ programming 
+*see c++ concepts folder for notes*
 * STL - string
 * STL - vector
 * STL - unordered_map & map
@@ -18,7 +19,7 @@
 * Function Overloading
 * Diamond problem
 * V-Table
-* const & constexpr
+* specifiers : static, volatile, const, constexpr, noexcept, final, override.
 
 ## C programming
 * String Functions <br />
@@ -105,39 +106,30 @@ https://www.lifesize.com/blog/tcp-vs-udp/#:~:text=TCP%20is%20a%20connection%2Dor
 3. Implementation defined (memory allocation in case of zero space request)
 #### MISRA C rules to avoid issues with it
 
-## Common Links.
+## Code Review Practices.
 Code review practices: https://www.youtube.com/watch?v=3pth05Rgr8U <br />
-LLDB debugging for Mac M1: https://www.youtube.com/watch?v=v_C1cvo1biI (Allow access to see code breakpoints.)
+
+## LLDB Debugger.
+LLDB debugging for Mac M1: https://www.youtube.com/watch?v=v_C1cvo1biI (Allow access to see code breakpoints.) <br />
+General command flow: 
+Add a breakpoint at main or any line number of your choice.
+```
+lldb 'your_exec_file'
+b main
+run
+gui
+```
+Use command "help" to see all commands.<br />
+In gui, it's easy to visually see the current variables and states. Useful for investigating seg faults.<br />
+'n' to go next line. <br />
+'s' to step in. <br />
+
 
 # CODING QUESTIONS
 
 ## DSA Practice
-### *Linked List*
-1. Reverse Linked List (C) https://leetcode.com/explore/interview/card/apple/345/linked-list/2024/ <br />
-2 approaches: <br />
-* Save all node pointers in a vector and start connecting again from the last node. <br />
-* Use three pointers. Track previous, current and next node and reverse the connection. <br />
-2. Merge 2 Sorted Lists (C++) https://leetcode.com/problems/merge-two-sorted-lists/submissions/871600832/ <br />
-Create a dummy node to start from and compare nodes from 2 lists and select the minimum one. <br /> 
-### *String manipulation*
-1. First Unique Character in a String (C) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2018/ <br />
-2. String to Integer (atoi) (C) https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2010/ <br />
-**Important points:** <br />
-* On the fly - overflow and underflow check to avoid runtime output variable overflow or underflow.
-```
-Sign is added later. Therefore overflow checked. Underflow is represented after checking sign.
-if(result > INT_MAX / 10) || (result == INT_MAX / 10 && digit > INT_MAX % 10))
-```
-* Appending Digits from Lsb.
-```
-result = 10 * result + digit;
-```
-* ASCII conversions (char to int)
-```
-isdigit();      // to check digit in C++ or do it manually
-char - '0';     // get the integer digit on the char representation. (ASCII of digit - ASCII of 0) 
-```
- <br />
+1. Linked List
+2. String mainpulation
 
 ### *Advanced Questions*
 1. LRU Cache (C++) https://leetcode.com/problems/lru-cache/description/ <br />
