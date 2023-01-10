@@ -8,7 +8,7 @@
 * STL - vector
 * STL - unordered_map & map
 * Copy and Move semantics
-* RAII
+* [RAII](c++_concepts/RAII.md)
 * Smart pointer
 * Inheritance
 * Friend class

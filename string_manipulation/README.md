@@ -30,12 +30,25 @@ char - '0';     // get the integer digit on the char representation. (ASCII of d
 https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2009/ <br />
 2 Approaches: <br />
     * ***Sliding window*** (fast) <br />
-    
+    **TODO**: optimized version which uses index array. <br />
+    Uses **2 pointer approach**. This creates a window of non-repeating substrings. <br />
+    Right pointer expands until a repetition is seen.  <br />
+    Light pointer moves until seen repetition is removed. <br />
+    O(2n) worst case both trackers go n spaces = O(n) time complexity. <br />
+    O(m) space, m - max size of window if unordered set used. <br />
+    O(1) space if direct access table used.
     * ***Brute force*** (slow and not favorable)<br />
-    Enumerate all substrings. <br />
     Pick each char and start making a non repeating char substring out of it. Find the biggest substring. <br />
-    DOUBT: O(n²) or O(n³) time complexity. <br />
-    O(min(m,n)) space.
+    O(n²)T ; O(min(m,n))S: <br />
+    Stop enumerating when we find a repeat char. Substring handling is opitmized with an unordered set. char search is O(1) <br />
+    O(n³)T ; O(1)S : <br />
+    Enumerate all substrings even if a repeat found. if at each step the entire substring is checked for repition which is O(n). <br />
+
+Consider the following:
+```
+int res = s.length() - 1
+```
+*If s.length is 0, the res is not -1, instead it is 18446744073709551615 which is (2⁶⁴ - 1) as it is naturally converted to unsigned int (int is 64 bits in my machine). Return type of s.length() is unsigned int and therefore explicitly typecast it to 'int' to avoid this issue.*
 
 
 
