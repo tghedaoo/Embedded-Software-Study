@@ -3,7 +3,6 @@
 # CONCEPTS
 
 ## C++ programming 
-*see c++ concepts folder for notes*
 * STL - string
 * STL - vector
 * STL - unordered_map & map
