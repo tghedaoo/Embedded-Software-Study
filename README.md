@@ -8,7 +8,7 @@
 * STL - unordered_map & map
 * Copy and Move semantics
 * [RAII](c++_concepts/RAII.md)
-* Smart pointer
+* [Smart pointer](c++_concepts/smart_pointer.md)
 * Inheritance
 * Friend class
 * Dynamic Polymorphism
