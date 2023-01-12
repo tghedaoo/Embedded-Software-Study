@@ -65,6 +65,8 @@ Frequently used.
 1. [Linked List](linked_list/README.md)
 2. [String mainpulation](string_manipulation/README.md)
 3. [Bit manipulation](bit_manipulation/README.md)
+4. [Arrays](arrays/README.md)
+5. [Search Algos](search/README.md)
 
 ## Advanced Questions
 1. **LRU Cache** (C++) <br />
