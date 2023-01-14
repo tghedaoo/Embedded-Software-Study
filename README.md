@@ -2,21 +2,21 @@
 
 # CONCEPTS
 
+## Embedded Systems
+1. [Endianess](endianess_check/README.md)
+2. [Socket Programming](socket_programming/README.md)
+3. [Bit Manipulation](bit_manipulation/README.md)
+4. [Operating Systems](operating_systems/README.md)
+5. [Peripherals]()
+
 ## C++ programming 
-* STL - string
-* STL - vector
-* STL - unordered_map & map
+* STL - string, vector, stack, map, unordered_map, set, unordered_set.
 * [Move and Copy Semantics](c++_concepts/move_copy_semantics.md)
 * [RAII](c++_concepts/RAII.md)
 * [Smart pointer](c++_concepts/smart_pointer.md)
-* Inheritance
-* Friend class
-* Dynamic Polymorphism
-* Virtual Functions
-* Static Polymorphism
-* Operator Overloading
-* Function Overloading
-* Diamond problem
+* Inheritance - Diamond problem, Friend class, Abstract class, virtual Functions, Base class.
+* Polymorphism - Static, Dynamic
+* Overloading - Operator, Function.
 * V-Table
 * specifiers : static, volatile, const, constexpr, noexcept, final, override.
 
@@ -24,36 +24,9 @@
 * [String Functions](https://www.programiz.com/c-programming/string-handling-functions)
 * [Dynamic Memory Allocation](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
 * [Variable Arguments for a function](https://www.geeksforgeeks.org/variable-length-argument-c/)
-    Good Example: [here](https://en.cppreference.com/w/c/variadic)
+    * Good Example: [here](https://en.cppreference.com/w/c/variadic)
 * [Volatile Keyword](https://www.drdobbs.com/cpp/volatile-the-multithreaded-programmers-b/184403766)
-
-### C POSIX Library (IEEE 1003)
-https://en.wikipedia.org/wiki/C_POSIX_library <br />
-Frequently used.
-* <errno.h>
-* <limits.h>
-* <math.h>
-* <pthread.h>
-* <semaphore.h>
-* <signal.h>
-* <stdargs.h>
-* <stdbool.h>
-* <stddef.h>
-* <stdint.h>
-* <stdio.h>
-* <stdlib.h>
-* <string.h>
-* <sys/socket.h>
-* <sys/wait.h>
-* <time.h>
-* <unistd.h>
-
-## Embedded Systems
-1. [Endianess](endianess_check/README.md)
-2. [Socket Programming](socket_programming/README.md)
-3. [Bit Manipulation](bit_manipulation/README.md)
-4. [Operating Systems](operating_systems/README.md)
-5. [Peripherals]()
+* [C Posix Library IEEE 1003](https://en.wikipedia.org/wiki/C_POSIX_library)
 
 # CODING QUESTIONS
 
@@ -97,3 +70,13 @@ In gui, it's easy to visually see the current variables and states. Useful for i
 2. Undefined behaviour (overflow/ underflow issues)
 3. Implementation defined (memory allocation in case of zero space request)
 #### MISRA C rules to avoid issues with it
+
+# TODO
+
+## Arrays
+* O(1) for product of array except self.
+## Bit manipulation
+* questions.
+* tricks.
+
+
