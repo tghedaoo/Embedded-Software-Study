@@ -6,7 +6,7 @@
 * STL - string
 * STL - vector
 * STL - unordered_map & map
-* Copy and Move semantics
+* [Move and Copy Semantics](c++_concepts/move_copy_semantics.md)
 * [RAII](c++_concepts/RAII.md)
 * [Smart pointer](c++_concepts/smart_pointer.md)
 * Inheritance
@@ -21,15 +21,11 @@
 * specifiers : static, volatile, const, constexpr, noexcept, final, override.
 
 ## C programming
-* String Functions <br />
-https://www.programiz.com/c-programming/string-handling-functions
-* Dynamic Memory Allocation: <br />
-https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/ 
-* Variable Arguments for a function: <br />
-https://www.geeksforgeeks.org/variable-length-argument-c/ <br />
-Good Example: https://en.cppreference.com/w/c/variadic
-* Volatile Keyword <br />
-https://www.drdobbs.com/cpp/volatile-the-multithreaded-programmers-b/184403766
+* [String Functions](https://www.programiz.com/c-programming/string-handling-functions)
+* [Dynamic Memory Allocation](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
+* [Variable Arguments for a function](https://www.geeksforgeeks.org/variable-length-argument-c/)
+    Good Example: [here](https://en.cppreference.com/w/c/variadic)
+* [Volatile Keyword](https://www.drdobbs.com/cpp/volatile-the-multithreaded-programmers-b/184403766)
 
 ### C POSIX Library (IEEE 1003)
 https://en.wikipedia.org/wiki/C_POSIX_library <br />
@@ -66,11 +62,12 @@ Frequently used.
 2. [String mainpulation](string_manipulation/README.md)
 3. [Bit manipulation](bit_manipulation/README.md)
 4. [Arrays](arrays/README.md)
-5. [Search Algos](search/README.md)
+5. [Search Algos](search_algos/README.md)
 
 ## Advanced Questions
 1. **LRU Cache** (C++) <br />
 https://leetcode.com/problems/lru-cache/description/ <br />
+[My Code](LRU_Cache/LRU_Cache.cc)
 LRU Cache needs a hash map mapping the nodes of a Doubly Linked List. The DLL tracks the least recently used key. <br />
 When a new key or a recently used key comes in, the DLL updates in such a way that the key in question ends up at the head. <br />
 Naturally the tail node becomes the least recently used one. This is removed whenever the list reaches capacity. <br />

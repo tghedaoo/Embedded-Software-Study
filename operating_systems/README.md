@@ -1,6 +1,6 @@
 # Operating Systems
 
-## *Thread and Process*
+## **Thread and Process**
 1. System Calls
 https://www.geeksforgeeks.org/introduction-of-system-call/
     * Process Creation System Calls. [ fork() and exec() ]
@@ -16,11 +16,12 @@ https://www.tutorialspoint.com/mutex-vs-semaphore
     * Shared Memory
     * Local Socket 
     * Signaling
+5. SpinLock
 
-## *Memory Management*
+## **Memory Management**
 1. Virtual Memory
 2. Paging
 3. TLB Cache
 
-## *Shell Concepts*
+## **Shell Concepts**
 #### Redirection

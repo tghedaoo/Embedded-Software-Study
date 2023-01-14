@@ -24,6 +24,7 @@ public:
         ListNode *cursor2 = list2;
 
         // Important: start with a dummy node to link the nodes from both the lists.
+        // Dummy node not exactly needed. (Try to have a non-pointer variable here)
         // ListNode *result = new ListNode();
         // Try smart pointer here for dummy node.
         std::shared_ptr<ListNode> result = std::make_shared<ListNode>();

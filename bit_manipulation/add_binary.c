@@ -8,9 +8,12 @@ char * addBinary(char * a, char * b)
     int blen = strlen(b);
 
     int reslen = (alen > blen) ? alen : blen;
-    reslen+=2;
+    // To have a first byte as carry and the last byte as ender.
+    reslen+=2; 
     char *res = (char*)malloc(sizeof(char) * reslen);
+    // Note : 
     // Leetcode fails without this ender. It throws seg fault.
+    // This might not be the case in C++.
     res[reslen-1] = '\0'; 
     
     int carry = 0;

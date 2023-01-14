@@ -2,6 +2,7 @@
 
 1. **First Unique Character in a String** (C) <br />
 https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2018/ <br />
+My Code: [here](first_unique_character.c) <br />
 Create ***unordered_map of index and freq*** of a particular char (or) ***arrays of 26*** where the char number can be tracked with array indices.
 Step 1: Get all chars and their corresponding latest indices and the number of times they appear. <br />
 Step 2: Check the frequency array/map and see which char only appears once ie. a unique char. <br />
@@ -9,6 +10,7 @@ Step 3: Check the most minimum index among them. That is the first unique char i
 
 2. **String to Integer (atoi)** (C) <br />
 https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2010/ <br />
+My Code: [here](string_to_integer_atoi.c) <br />
 **Important points:** <br />
 * On the fly - overflow and underflow check to avoid runtime output variable overflow or underflow.
 ```
@@ -28,6 +30,7 @@ char - '0';     // get the integer digit on the char representation. (ASCII of d
 
 3. **Longest Substring Without Repeating Characters** (C++) <br />
 https://leetcode.com/explore/interview/card/apple/344/array-and-strings/2009/ <br />
+My Code: [here](longest_substring_wrc.cc) <br />
 2 Approaches: <br />
     * ***Sliding window*** (fast) <br />
     **TODO**: optimized version which uses index array. <br />
@@ -50,8 +53,9 @@ int res = s.length() - 1
 ```
 *If s.length is 0, the res is not -1, instead it is 18446744073709551615 which is (2⁶⁴ - 1) as it is naturally converted to unsigned int (int is 64 bits in my machine). Return type of s.length() is unsigned int and therefore explicitly typecast it to 'int' to avoid this issue.*
 
-4. **Roman to Interger** (C++) <br />
+4. **Roman to Integer** (C++) <br />
 https://leetcode.com/explore/interview/card/apple/344/array-and-strings/3107/ <br/>
+My Code: [here](roman_to_integer.cc) <br />
 The roman numerals and corresponding integers are put in a hash map (unordered map). <br />
 In the leetcode solution, the one char ahead is also checked in every loop and iterator jumps 2 steps if satisfied. This is further optimized by putting the combined special characters eg. IV in the mapping itself.<br />
 In my solution, I have touched only one char at a time and have stored the previous value. If prev is less than the current, I subtract the values from the sum and the current val and add the remainder to the sum. <br />
