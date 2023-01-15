@@ -33,10 +33,9 @@ Byte Addressable is one byte can be represented by one address. <br />
 flowchart LR;
     A[APP]--Virtual Address-->B[MMU];
     B-- Physical Address -->C[RAM];
-    C-->D[Lookup Table];
-    D-->C;
+    B-->D[Lookup Table];
+    D-->B;
 ```
-
 
 ## Paging
 ## TLB Cache
