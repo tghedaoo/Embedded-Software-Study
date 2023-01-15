@@ -30,6 +30,17 @@ https://leetcode.com/problems/move-zeroes/<br />
 My Code: [Move Zeros](move_zeros.c) <br />
 ***Time complexity: O(n)*** <br />
 ***Space complexity: O(1)*** <br />
+**THE MIGHTY 2 POINTER APPROACH**
 Fundamentally, traversing the array from start. We have a pointer tracking the new set of values being added in-place. <br />
 The tracker keeps moving with the normal cursor(moving along the array) based on the replacement needs as per the question. <br />
 We overwrite duplicates, target elements or zeros with the exisiting values. For zeros, we manually add it after all non-zero values are put in-place.<br />
+
+4. **Squares of a Sorted Array** (C++) <br />
+https://leetcode.com/explore/interview/card/apple/344/array-and-strings/3116/ <br />
+My Code: [here](squares_of_sorted_array.cc)
+***Time complexity: O(nlog(n)) or O(n)*** <br />
+***Space complexity: O(1)*** <br />
+Straight forward way is to do squares and sort them which O(nlog(n))
+**THE MIGHTY 2 POINTER APPROACH**
+Start from 2 ends of the already sorted array. See which absolute value is larger. <br />
+Whichever is, its square will be placed in the very end. The result array is made from the end. <br />

@@ -78,5 +78,12 @@ In gui, it's easy to visually see the current variables and states. Useful for i
 ## Bit manipulation
 * questions.
 * tricks.
+## Endainess notes 
+## OS 
+* my slides convert
+* memory notes
+* shell?
+
+
 
 
