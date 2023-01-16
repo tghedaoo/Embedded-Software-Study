@@ -70,20 +70,3 @@ In gui, it's easy to visually see the current variables and states. Useful for i
 2. Undefined behaviour (overflow/ underflow issues)
 3. Implementation defined (memory allocation in case of zero space request)
 #### MISRA C rules to avoid issues with it
-
-# TODO
-
-## Arrays
-* O(1) for product of array except self.
-## Bit manipulation
-* questions.
-* tricks.
-## Endainess notes 
-## OS 
-* my slides convert
-* memory notes
-* shell?
-
-
-
-

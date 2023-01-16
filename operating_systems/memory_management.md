@@ -3,7 +3,7 @@
 [Source - GeeksforGeeks](https://www.geeksforgeeks.org/memory-layout-of-c-program/) <br />
 
 When a program is loaded onto memory, it becomes a process. The layout looks like this.<br />
-![Process Layout](memoryLayoutC.jpg "Memory layout for a process") <br />
+![Process Layout](images/memoryLayoutC.jpg "Memory layout for a process") <br />
 **Note:** The bss section is not automatically initialized. See bss notes. <br />
 Predominantly there are 5 sections: <br/>
 * **Stack** - Stack is fixed size buffer which holds stack frames during a function call.grows from high address to lower address. LIFO.    
@@ -35,10 +35,10 @@ Also, physical memory (RAM) may be smaller than the possible 32 bit address spac
 
 Catch - **Memory Management Unit (MMU) Hardware** <br />
 Using a lookup table, the MMU can translate the virtual address of an app to an address in physical memory.
-![MMU flow](MMU.png "MMU flow") <br />
+![MMU flow](images/MMU.png "MMU flow") <br />
 
 **One-to-one mapping** <br />
-![one to one map](1-to-1map.png "one to one mapping for 2 apps") <br />
+![one to one map](images/1-to-1map.png "one to one mapping for 2 apps") <br />
 * MMU handles mapping virtual address to physical address of blocks (even if not contiguous) for an app. 
 * No memory fragmentation. Even small blocks can be mapped by the MMU.
 * App is contained within its own virtual address space and mapping ensures we are not getting into another process space. 
@@ -60,7 +60,7 @@ To get around this => Paging.
 ## Paging
 [My Notes](https://drive.google.com/file/d/1SSlOTgJ-pYaVOjaNuXDhkvkRWUFOlatE/view?usp=share_link) <br />
 [Youtube source - Gary Sims](https://www.youtube.com/watch?v=2quKyPnUShQ) <br />
-![paging](paging.png "Paging Method") <br />
+![paging](images/paging.png "Paging Method") <br />
 Divide the Memory into blocks, typically 4 KB each. Each block is called pages. <br />
 The mapping is between virtual memory page to physical memory page. The starting address of that page is taken. <br />
 The lookup table is called **page table**. <br /> 
@@ -80,7 +80,7 @@ The offset gets directly copied. The addresses are mapped and translated.
 4KB = 4096 bytes = 12 bits => offset size.
 If 32 bit system ; 20 bits => page address. 
 ```
-![paging_offset](paging_offset.png "Paging Offset") <br />
+![paging_offset](images/paging_offset.png "Paging Offset") <br />
 
 ## Where are these lookup/page tables held?
 Not in CPU, but in **RAM**. <br />
