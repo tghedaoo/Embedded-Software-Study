@@ -7,7 +7,7 @@
 2. [Socket Programming](socket_programming/README.md)
 3. [Bit Manipulation](bit_manipulation/README.md)
 4. [Operating Systems](operating_systems/README.md)
-5. [Peripherals]()
+5. [Peripherals](peripherals/README.md)
 
 ## C++ programming 
 * STL - string, vector, stack, map, unordered_map, set, unordered_set.
@@ -19,6 +19,7 @@
 * Overloading - Operator, Function.
 * V-Table
 * specifiers : static, volatile, const, constexpr, noexcept, final, override.
+* Design Patterns: Factory, Visitor.
 
 ## C programming
 * [String Functions](https://www.programiz.com/c-programming/string-handling-functions)
@@ -27,6 +28,7 @@
     * Good Example: [here](https://en.cppreference.com/w/c/variadic)
 * [Volatile Keyword](https://www.drdobbs.com/cpp/volatile-the-multithreaded-programmers-b/184403766)
 * [C Posix Library IEEE 1003](https://en.wikipedia.org/wiki/C_POSIX_library)
+* [Structure padding and packing](structures_union/structure_padding_and_packing.md)
 
 # CODING QUESTIONS
 
@@ -36,6 +38,8 @@
 3. [Bit manipulation](bit_manipulation/README.md)
 4. [Arrays](arrays/README.md)
 5. [Search Algos](search_algos/README.md)
+6. [Tree](tree/README.md) 
+7. [Queue](queue/README.md)
 
 ## Advanced Questions
 1. **LRU Cache** (C++) <br />

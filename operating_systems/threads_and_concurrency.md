@@ -84,7 +84,6 @@ The process/thread on the contrary gets scheduled (instead of being put in the b
 **SpinLock**<br />
 Uses busy wait, but the lock is acquired atomically.
 
-
 ## Issues in Synchronization
 * **Deadlock** <br />
 [Source](https://www.tutorialspoint.com/starvation-and-deadlock) <br />
@@ -94,7 +93,7 @@ Inturn, everybody gets blocked. **Circular Wait** is a very common example.
 [Source](https://www.digikey.com/en/maker/projects/introduction-to-rtos-solution-to-part-11-priority-inversion/abf4b8f7cd4a4c70bece35678d178321) <br />
 A high priority task gets preempted by lower priority task indirectly. It's not letting the high priority task get scheduled to run as it's using a resource and not freeing it for example. <br />
 There are 2 types:
-* Bounded: High(H) gets blocked by Low(L). Low has the resource (can be a lock) and High is only unblocked when resource is freed.
-* Unbounded: A Mid(M) guy comes in. Now L blocks H for a resource(R1). M is running and blocks L for a different resource (R2). M can now block H indirectly for an unbounded time. M has to free R2 to unblock L. L frees R1 to unblock H.
+    * Bounded: High(H) gets blocked by Low(L). Low has the resource (can be a lock) and High is only unblocked when resource is freed.
+    * Unbounded: A Mid(M) guy comes in. Now L blocks H for a resource(R1). M is running and blocks L for a different resource (R2). M can now block H indirectly for an unbounded time. M has to free R2 to unblock L. L frees R1 to unblock H.
 
 

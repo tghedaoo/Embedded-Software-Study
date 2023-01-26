@@ -20,11 +20,12 @@
 More in the leetcode section. 
 |Question   | Expression  | Thoughts |
 |---|---|---|
-|odd or even                | x & 1                 | if 1 its odd, else even                               |
+|odd or even                | x & 1                 | if 1 its odd, else even   (x % 2 ==0)                 |
 |Lowest set bit (LSb side)  | ans = x & -x          |                                                       |
 |Power of 2  (approach 1)   | x = x & -x            | same number retrieved -> only one 1 bit in number set |
 |Power of 2  (approach 2)   | 0 == x & (x-1)        | removes the only set bit thats is at the lowest bit position  |    
-|**Hamming Weight**         | ans = x & (x-1)       | removes lowest set bit from number. loop ans until 0.         |   
+|**Hamming Weight**         | ans = x & (x-1)       | removes lowest set bit from number. loop ans until 0. |
+|**Swap Bits**              | a = a ^ (1 << n) ^ (1 << m) | if bits same, return. Else, flip the bits       |       
 
 ## LEETCODE
 [My Notes](https://drive.google.com/file/d/1Bgyo1it-MCAvFo60YM1Y6CWE8xdxUk5y/view?usp=sharing) <br />
@@ -49,10 +50,10 @@ Note: In C, the result string has to have a **'\0' (null termination)** or leetc
 sum = (val_a ^ val_b ^ carry);
 carry = (val_a & val_b) | (val_a & carry) | (carry & val_b);
 ```
-
 3. **Add String** (C) <br /> 
 4. **Counting Bits & Number of 1 Bits** (C) <br />
 5. **Power of 2** (C) <br />
 6. **Reverse Bits** (C) <br />
-7. **Swap Bits in a given number** (C) <br />
+7. **Swap Bits in a given number** (C) <br /> 
+
 

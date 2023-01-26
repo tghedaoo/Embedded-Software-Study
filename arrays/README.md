@@ -44,3 +44,7 @@ Straight forward way is to do squares and sort them which O(nlog(n))
 **THE MIGHTY 2 POINTER APPROACH**
 Start from 2 ends of the already sorted array. See which absolute value is larger. <br />
 Whichever is, its square will be placed in the very end. The result array is made from the end. <br />
+
+5. Intersection of 2 Arrays (C++) <br />
+https://leetcode.com/problems/intersection-of-two-arrays/submissions/885217033/
+O(n+m) to convert both vector to unoredered_set. Then duplications are removed. Search later with O(1) per val. O(m) or O(n) based on size of sets.

@@ -1,4 +1,0 @@
-# Mutex vs Semaphore.
-
-
-
