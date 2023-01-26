@@ -84,16 +84,34 @@ struct packet
  uint16_t d;
 }
 ```
-[Source](http://www.catb.org/esr/structure-packing/):
-In general, a struct instance will have the alignment of its **widest scalar member**. Compilers do this as the easiest way to ensure that all the members are self-aligned for fast access.
-2 bytes can be accessed at a time. These 2 bytes can be 2 chars also. <br />
-Therefore, **arrange members in decreasing order** of size.
+[Solution Source](http://www.catb.org/esr/structure-packing/)
+* In general, a struct instance will have the alignment of its **widest scalar member**. 
+* Compilers do this as the easiest way to ensure that all the members are self-aligned for fast access.
+* **Arrange members in decreasing order** of size.
 
 [See code for compiler results](test.c)
 
 ## Bitfields
 [Source](http://www.catb.org/esr/structure-packing/) <br />
-Exact number of bits are assigned to the members. Bits are then padded to accomodate access.
+Exact number of bits are assigned to the members. Bits are then padded to accomodate access. <br />
+```
+32 bit compiler.
+    struct a3
+    {
+        short a;   // 2 bytes
+        char b;    // 1 byte
+        int c : 1; // 1 bit
+        int d : 4; // 4 bit
+        // 3 bits padded. -> 1 byte complete formed.
+        // so here, 32 bits / 4 bytes accessed per CPU cyle.
+        int e : 7; // 7 bit
+        // this is the next CPU cycle. This picks up 32 bits.
+        // since we want a good memory access in next cycle, 25 bits a padded.
+    };
+```
+![4](images/bitfield.jpg " ") 
+
+[See code for compiler results](test.c)
 
 # Structure Packing
 This avoids any padding and we get the exact size based of the size of members.
