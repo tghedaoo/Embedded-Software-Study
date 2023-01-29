@@ -2,6 +2,7 @@
 // In C, Linked List can ensure that the queue can grow without restriction.
 // Queue operations modify the list. Implements FIFO.
 // Pop removes the first node. Push adds the node to the end.
+// No memory wastage. But Heap used.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -39,7 +40,7 @@ void deQueue()
 {
     QueueNode* current_head = head;
     head = head->next;
-    free(current_head);
+    free(current_head); //Free the memory to avoid memory leak.
 }
 
 // get the first element in the queue.

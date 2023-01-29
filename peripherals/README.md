@@ -23,7 +23,7 @@ Capacitance of cable/bus increases with distance. This causes slow growth of vol
 [I2C Concept](https://drive.google.com/file/d/1nDCR9Tn-c3cm4nS6NZ7bzwgCTOnTdxeF/view?usp=share_link)
 
 Less pins and compact. Not bi-directional. 
-There is some overhead with I C; for
+There is some overhead with I2C; for
 every 8 bits of data to be sent, one extra bit of meta data (the "ACK/NACK" bit, which we'll discuss later) must be transmitted.
 
 ## UART

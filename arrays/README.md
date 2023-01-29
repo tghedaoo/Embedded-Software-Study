@@ -48,3 +48,8 @@ Whichever is, its square will be placed in the very end. The result array is mad
 5. Intersection of 2 Arrays (C++) <br />
 https://leetcode.com/problems/intersection-of-two-arrays/submissions/885217033/
 O(n+m) to convert both vector to unoredered_set. Then duplications are removed. Search later with O(1) per val. O(m) or O(n) based on size of sets.
+
+** Documentation from here **
+
+[Leetcode - Sum of even numbers after queries]https://leetcode.com/problems/sum-of-even-numbers-after-queries/description/ <br />
+O(n) solution: first get sum, then modify sum based on each query. Just check for even number at the index before and after addition. <br />

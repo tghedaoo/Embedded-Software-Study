@@ -9,6 +9,15 @@
 4. [Operating Systems](operating_systems/README.md)
 5. [Peripherals](peripherals/README.md)
 
+## Data Structures & Algorithms
+1. [Arrays](arrays/README.md) 
+2. [Linked List](linked_list/README.md)
+3. [Search Algos](search_algos/README.md)
+4. [Queue](queue/README.md)
+5. [Stack]()
+6. [Tree](tree/README.md) 
+7. [String mainpulation](string_manipulation/README.md)
+
 ## C++ programming 
 * STL - string, vector, stack, map, unordered_map, set, unordered_set.
 * [Move and Copy Semantics](c++_concepts/move_copy_semantics.md)
@@ -32,14 +41,7 @@
 
 # CODING QUESTIONS
 
-## DSA Practice
-1. [Linked List](linked_list/README.md)
-2. [String mainpulation](string_manipulation/README.md)
-3. [Bit manipulation](bit_manipulation/README.md)
-4. [Arrays](arrays/README.md)
-5. [Search Algos](search_algos/README.md)
-6. [Tree](tree/README.md) 
-7. [Queue](queue/README.md)
+
 
 ## Advanced Questions
 1. **LRU Cache** (C++) <br />
