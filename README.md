@@ -9,6 +9,7 @@
 4. [Operating Systems](operating_systems/README.md)
 5. [Peripherals](peripherals/README.md)
 6. [Boot Sequence](operating_systems/boot_process.md)
+7. [System Design](operating_systems/system_design.md)
 
 ## Data Structures & Algorithms
 1. [Arrays](arrays/README.md) 
