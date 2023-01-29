@@ -8,6 +8,7 @@
 3. [Bit Manipulation](bit_manipulation/README.md)
 4. [Operating Systems](operating_systems/README.md)
 5. [Peripherals](peripherals/README.md)
+6. [Boot Sequence](operating_systems/boot_process.md)
 
 ## Data Structures & Algorithms
 1. [Arrays](arrays/README.md) 
@@ -18,18 +19,21 @@
 6. [Tree](tree/README.md) 
 7. [String mainpulation](string_manipulation/README.md)
 
-## C++ programming 
-* STL - string, vector, stack, map, unordered_map, set, unordered_set.
+## C++ programming
+### Encapsulation, Inheritance, Polymorphism, Abstraction. 
+* [Inheritance](c++_concepts/inheritance.md) - Base & Derived Class, Indirect Inheritance, Abstract Class, Dynamic Polymorphism. 
+(TODO - Friend class, multiple inheritance, Diamond problem)
+* Dynamic Polymorphism - Runtime polymorphism. See Inheritance and Keywords doc.
+* [Static Polymorphism]()
+(TODO - Templates and Overloading - Operator, Function.)
 * [Move and Copy Semantics](c++_concepts/move_copy_semantics.md)
 * [RAII](c++_concepts/RAII.md)
 * [Smart pointer](c++_concepts/smart_pointer.md)
-* [Inheritance](c++_concepts/inheritance.md)
-* Inheritance - Diamond problem, Friend class, Abstract class, virtual Functions, Base class.
-* Polymorphism - Static, Dynamic
-* Overloading - Operator, Function.
-* V-Table
-* specifiers : static, volatile, const, constexpr, noexcept, final, override.
+* [V-Table](c++_concepts/VTable.md)
+* [keywords](c++_concepts/keywords.md): static, volatile, const, virtual
+(TODO - virtual class, constexpr, noexcept)
 * Design Patterns: Factory, Visitor.
+* STL - string, vector, stack, map, unordered_map, set, unordered_set.
 
 ## C programming
 * [String Functions](https://www.programiz.com/c-programming/string-handling-functions)
