@@ -23,6 +23,7 @@
 * [Move and Copy Semantics](c++_concepts/move_copy_semantics.md)
 * [RAII](c++_concepts/RAII.md)
 * [Smart pointer](c++_concepts/smart_pointer.md)
+* [Inheritance](c++_concepts/inheritance.md)
 * Inheritance - Diamond problem, Friend class, Abstract class, virtual Functions, Base class.
 * Polymorphism - Static, Dynamic
 * Overloading - Operator, Function.
