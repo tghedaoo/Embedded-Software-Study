@@ -87,8 +87,9 @@ Uses busy wait, but the lock is acquired atomically.
 ## Issues in Synchronization
 * **Deadlock** <br />
 [Source](https://www.tutorialspoint.com/starvation-and-deadlock) <br />
-Two or more process/threads are blocked due to resource being taken by a process/thread that is also blocked. <br />
-Inturn, everybody gets blocked. **Circular Wait** is a very common example.
+Two or more process/threads are blocked due to resource being taken by a process/thread that is also blocked. Inturn, everybody gets blocked. **Circular Wait** is a very common example. <br />
+Deadlock can be prevented by eliminating any of the four necessary conditions, which are **mutual exclusion, hold and wait, no preemption, and circular wait.**
+
 * **Priority Inversion** <br /> 
 [Source](https://www.digikey.com/en/maker/projects/introduction-to-rtos-solution-to-part-11-priority-inversion/abf4b8f7cd4a4c70bece35678d178321) <br />
 A high priority task gets preempted by lower priority task indirectly. It's not letting the high priority task get scheduled to run as it's using a resource and not freeing it for example. <br />

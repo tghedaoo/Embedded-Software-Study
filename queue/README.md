@@ -32,10 +32,13 @@ With Linked List, dequeue will delete the node from memory and a count is needed
 **Thread Safety:** <br />
 One issue is it's **not thread safe**. If the object is not locked, one thread might be doing an op (enQueue) for example and can be interrupted in between and the other might take over and overwrite or corrupt the previously incomplete op.
 
+[Leetcode - Implement Stack using Queue](https://leetcode.com/problems/implement-stack-using-queues/description/) <br />
+[Leetcode - Implement Queue using Stack](https://leetcode.com/problems/implement-queue-using-stacks/description/) <br />
+Catch: play with push ops. (create the data structure as per implementation), therefore pop op will be the same and straight forward. <br />
+
 # CIRCULAR QUEUE
 [Youtube](https://www.youtube.com/watch?v=dn01XST9-bI) <br />
-[Leetcode question](https://leetcode.com/problems/design-circular-queue/solutions/)
-<br />
+[Leetcode question](https://leetcode.com/problems/design-circular-queue/solutions/)<br />
 [Circular Queue using Array](circular_queue.c) <br/>
 
 **Main ops:** same as Linear Queue. <br/>
@@ -56,6 +59,7 @@ Differences:
 # DEQue (Double Ended Queue).
 https://www.youtube.com/watch?v=pqg0SOPRlJ4 <br />
 https://www.youtube.com/watch?v=WJres9mgiAk <br />
+[Leetcode](https://leetcode.com/problems/design-circular-deque/description/) <br />
 **No FIFO.** Insertion & Deletion from front and rear. <br />
 Has properties of both stack(LIFO) and queue(FIFO). <br />
 **2 Types:**
@@ -78,16 +82,4 @@ Has properties of both stack(LIFO) and queue(FIFO). <br />
 
 **TODO:** 
 1. Document Leetcode solutions.
-4. Priority Queue.
-
-
-# LEETCODE
-
-[Leetcode - Implement Stack using Queue](https://leetcode.com/problems/implement-stack-using-queues/description/) <br />
-[Leetcode - Implement Queue using Stack](https://leetcode.com/problems/implement-queue-using-stacks/description/)
- <br />
-Catch: play with push ops. (create the data structure as per implementation), therefore pop op will be the same and straight forward. <br />
-
-[Leetcode question](https://leetcode.com/problems/design-circular-queue/solutions/)
-
-https://leetcode.com/problems/design-circular-deque/description/
+2. Priority Queue.

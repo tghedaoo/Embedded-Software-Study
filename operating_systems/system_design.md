@@ -14,10 +14,9 @@
 
 ## Steps involved:
 1. Requirements, Abstraction, Problem Statement
-2. Specifications
-3. Architecture
-4. Components
-5. System integration
+2. Architecture
+3. Components
+4. System integration
 
 ### 1. Requirements, Abstraction, Problem Statement
 * Functional 
@@ -30,10 +29,9 @@ Goals:
     3. Power Consumption
     4. Size/Weight
 
-### 2. Specifications
 Minimal effort, resources, and features based on requirement that solves the requirement.
 
-### 3. Architecture Design
+### 2. Architecture Design
 * Implmentation of the system is the architecture. 
 * Highlights major parts and flow of features in the system.
 * C4 block diagram for example to satisfy all functional requirements.
@@ -43,13 +41,13 @@ Minimal effort, resources, and features based on requirement that solves the req
     * check for available designs in the market.
     * check UI requirement.
 
-### 4. Components (Modular Design)
+### 3. Components (Modular Design)
 * Depending upon the speed and deadlines, we would need powerful processes and therefore might go for costlier solution. 
 * If we have a budget constraint and are restricted to procure high performance hardware, software has to be designed to accomodate it. <br />
 * **Goals** (performance, power, cost) govern the hardware/software module selection.
 So the component selection is interdependent.
 
-### 5. System Integration
+### 4. System Integration
 * Determine and implement the flow between modules. (Mapping)
 * Unit tested hardware and software components by now.
 * The software modules should be integrated to see functionality on test bench.

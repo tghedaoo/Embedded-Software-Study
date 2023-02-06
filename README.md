@@ -1,7 +1,5 @@
 # Embedded Systems Software / Firmware Study Material
 
-# CONCEPTS
-
 ## Embedded Systems
 1. [Endianess](endianess_check/README.md)
 2. [Socket Programming](socket_programming/README.md)
@@ -16,7 +14,7 @@
 2. [Linked List](linked_list/README.md)
 3. [Search Algos](search_algos/README.md)
 4. [Queue](queue/README.md)
-5. [Stack]()
+5. [Stack](stack/READ)
 6. [Tree](tree/README.md) 
 7. [String mainpulation](string_manipulation/README.md)
 
@@ -45,11 +43,7 @@
 * [C Posix Library IEEE 1003](https://en.wikipedia.org/wiki/C_POSIX_library)
 * [Structure padding and packing](structures_union/structure_padding_and_packing.md)
 
-# CODING QUESTIONS
-
-
-
-## Advanced Questions
+## Advanced Leetcode Questions
 1. **LRU Cache** (C++) <br />
 https://leetcode.com/problems/lru-cache/description/ <br />
 [My Code](LRU_Cache/LRU_Cache.cc)
@@ -58,10 +52,10 @@ When a new key or a recently used key comes in, the DLL updates in such a way th
 Naturally the tail node becomes the least recently used one. This is removed whenever the list reaches capacity. <br />
 Note: To avoid time exceed issue, remove extra functions from the class and hard code the ops. <br />
 
-# Code Review Practices.
+## Code Review Practices.
 Code review practices: https://www.youtube.com/watch?v=3pth05Rgr8U <br />
 
-# LLDB Debugger.
+## LLDB Debugger.
 LLDB debugging for Mac M1: https://www.youtube.com/watch?v=v_C1cvo1biI (Allow access to see code breakpoints.) <br />
 General command flow: 
 Add a breakpoint at main or any line number of your choice.
@@ -76,7 +70,7 @@ In gui, it's easy to visually see the current variables and states. Useful for i
 'n' to go next line. <br />
 's' to step in. <br />
 
-# ISO 26262.
+## ISO 26262.
 ### *Issues with C*
 1. Unspecified behaviour (sequence of evaluation)
 2. Undefined behaviour (overflow/ underflow issues)

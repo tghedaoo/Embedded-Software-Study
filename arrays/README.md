@@ -31,25 +31,28 @@ My Code: [Move Zeros](move_zeros.c) <br />
 ***Time complexity: O(n)*** <br />
 ***Space complexity: O(1)*** <br />
 **THE MIGHTY 2 POINTER APPROACH**
-Fundamentally, traversing the array from start. We have a pointer tracking the new set of values being added in-place. <br />
-The tracker keeps moving with the normal cursor(moving along the array) based on the replacement needs as per the question. <br />
-We overwrite duplicates, target elements or zeros with the exisiting values. For zeros, we manually add it after all non-zero values are put in-place.<br />
+* Fundamentally, traversing the array from start. We have a pointer tracking the new set of values being added in-place. 
+* The tracker keeps moving with the normal cursor(moving along the array) based on the replacement needs as per the question. 
+* We overwrite duplicates, target elements or zeros with the exisiting values. For zeros, we manually add it after all non-zero values are put in-place.
 
 4. **Squares of a Sorted Array** (C++) <br />
 https://leetcode.com/explore/interview/card/apple/344/array-and-strings/3116/ <br />
 My Code: [here](squares_of_sorted_array.cc)
 ***Time complexity: O(nlog(n)) or O(n)*** <br />
 ***Space complexity: O(1)*** <br />
-Straight forward way is to do squares and sort them which O(nlog(n))
+Straight forward way is to do squares and sort them with O(nlog(n))
 **THE MIGHTY 2 POINTER APPROACH**
-Start from 2 ends of the already sorted array. See which absolute value is larger. <br />
-Whichever is, its square will be placed in the very end. The result array is made from the end. <br />
+* Start from 2 ends of the already sorted array. See which absolute value is larger.
+* Whichever is, its square will be placed in the very end of the result array. 
 
-5. Intersection of 2 Arrays (C++) <br />
-https://leetcode.com/problems/intersection-of-two-arrays/submissions/885217033/
-O(n+m) to convert both vector to unoredered_set. Then duplications are removed. Search later with O(1) per val. O(m) or O(n) based on size of sets.
+5. **Intersection of 2 Arrays** (C++) <br />
+https://leetcode.com/problems/intersection-of-two-arrays/submissions/885217033/ <br />
+My Code: [here](intersection_of_2_arrays.cc)
+* Converting vectors to sets removes duplications. O(n+m) to convert both vector to unoredered_set. 
+* Search later with O(1) per val. O(m) or O(n) based on size of sets.
 
-** Documentation from here **
-
-[Leetcode - Sum of even numbers after queries]https://leetcode.com/problems/sum-of-even-numbers-after-queries/description/ <br />
-O(n) solution: first get sum, then modify sum based on each query. Just check for even number at the index before and after addition. <br />
+6. **Sum of Even Numbers After Queries** (C++) <br />
+https://leetcode.com/problems/sum-of-even-numbers-after-queries/description/ <br />
+My Code: [here](sum_even_num_queries.cc)
+* O(n) solution: first get sum, then modify sum based on each query. 
+* Just check for even number at the index before and after addition.

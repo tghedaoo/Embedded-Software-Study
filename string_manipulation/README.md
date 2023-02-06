@@ -59,3 +59,5 @@ My Code: [here](roman_to_integer.cc) <br />
 The roman numerals and corresponding integers are put in a hash map (unordered map). <br />
 In the leetcode solution, the one char ahead is also checked in every loop and iterator jumps 2 steps if satisfied. This is further optimized by putting the combined special characters eg. IV in the mapping itself.<br />
 In my solution, I have touched only one char at a time and have stored the previous value. If prev is less than the current, I subtract the values from the sum and the current val and add the remainder to the sum. <br />
+
+5. **Valid Anagram** (C) <br /> https://leetcode.com/explore/interview/card/apple/346/sorting-and-searching/2027/
