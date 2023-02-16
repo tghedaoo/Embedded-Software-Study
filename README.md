@@ -14,7 +14,7 @@
 2. [Linked List](linked_list/README.md)
 3. [Search Algos](search_algos/README.md)
 4. [Queue](queue/README.md)
-5. [Stack](stack/READ)
+5. [Stack](stack/README.md)
 6. [Tree](tree/README.md) 
 7. [String mainpulation](string_manipulation/README.md)
 

@@ -36,8 +36,8 @@ My Code: [C here](check_if_N_and_double_exist.c) <br />
 My Code: [C++ here](check_if_N_and_double_exist.cpp) <br />
 ***Time complexity: O(nlog(n)) or O(n)*** <br />
 ***Space complexity: O(1) or O(n)*** <br />
-Important: ***mid != index*** Check if the found double is at the same index, because the array might have 0s.<br />
-C++ Solution: Save the array in a unordered_map (save the indexes also). Find double and verify index. Therefore O(n) time and space. <br />
-C Solution: binary search but for that too work we need to sort the array. Also cross-check current index. Therefore O(nlog(n)) time. <br />
+Important: ***mid != index*** Check if the found double is at the same index, because the array might have 0s.
+* C++ Solution: Save the array in a unordered_map (save the indexes also). Find double and verify index. Therefore O(n) time and space. 
+* C Solution: binary search but for that too work we need to sort the array. Also cross-check current index. Therefore O(nlog(n)) time.
 
 3. https://leetcode.com/problems/top-k-frequent-words/submissions/887757590/

@@ -25,7 +25,7 @@ F[User Level];
 * This is specific to Linux. There is a different bootloader for Windows.
 
 3. **GRUB** Grand Unified Bootloader. 
-* This is the Linux bootloader.
+* This is the Linux bootloader. But can be used to select from multiple OS options.
 * If there are multiple kernel images, GRUB lets you select which one to load.
 * Selected kernel is loaded and executed.
 * The critical file systems, and device drivers are all loaded into memory. 
