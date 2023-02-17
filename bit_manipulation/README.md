@@ -21,7 +21,7 @@ More in the leetcode section.
 |Question   | Expression  | Thoughts |
 |---|---|---|
 |odd or even                | x & 1                 | if 1 its odd, else even   (x % 2 ==0)                 |
-|convert any number to odd  | x | 1                 | if even, last bit changed. Else unchanged             | 
+|convert any number to odd  | x (or) 1              | if even, last bit changed.                            | 
 |Lowest set bit (LSb side)  | ans = x & -x          |                                                       |
 |Power of 2  (approach 1)   | x = x & -x            | same number retrieved -> only one 1 bit in number set |
 |Power of 2  (approach 2)   | 0 == x & (x-1)        | removes the only set bit thats is at the lowest bit position  |    
@@ -56,5 +56,4 @@ carry = (val_a & val_b) | (val_a & carry) | (carry & val_b);
 5. **Power of 2** (C) <br />
 6. **Reverse Bits** (C) <br />
 7. **Swap Bits in a given number** (C) <br /> 
-
 
